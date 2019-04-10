@@ -742,10 +742,9 @@ GEOR.Addons.Cadastre.initInformationRequestWindow = function() {
 
 							var requestType = element.items.items[0].getValue();
 							var idObjectRequest = element.items.items[0].getId().split('objectRequestType')[1];
-							//return the state of the box - 1 for check or 0 for no check						
-							var stateRpBox = (Ext.getCmp('rpBox'+idObjectRequest).checked) ? 1 : 0;
-							var stateBpBox = (Ext.getCmp('bpBox'+idObjectRequest).checked) ? 1 : 0; 							    
-
+							//return the state of the box - 1 for check or 0 for no check							
+							var stateRpBox = Ext.getCmp('rpBox'+idObjectRequest) && (Ext.getCmp('rpBox'+idObjectRequest).checked) ? 1 : 0;
+							var stateBpBox = Ext.getCmp('bpBox'+idObjectRequest) && (Ext.getCmp('bpBox'+idObjectRequest).checked) ? 1 : 0;							
 							if (requestType == 5) {
                                 params.parcelleIds.push(Ext.getCmp('ObjectRequestDynField' + idObjectRequest).items.items[0].getValue()+ '|' +
                                 // send state information in the requestURL according to checkBox state
@@ -790,6 +789,7 @@ GEOR.Addons.Cadastre.initInformationRequestWindow = function() {
 		                        
 							} else {
 								console.log(" Object Type of request not defined");
+								box.hide();
 							}
 						});
 
