@@ -43,11 +43,11 @@ GRANT ALL PRIVILEGES ON DATABASE cadastrapp TO cadastrapp ;
 
 
 ## Utilisation du script
+:warning: Le modèle arcOpole ne sera plus supporté à partir de la version 1.9 de Cadastrap.
 
 Selon le modèle de données que vous utilisez, ouvrir le fichier correspondant :
 
 - QGIS : ```/script/qgis/createDBUsingQgisModel.sh```
-- arcOpole : ```/script/qgis/createDBUsingArcopoleModel.sh```
 
 et saisir les paramètres de connexion aux différentes base de données : [https://github.com/georchestra/cadastrapp/blob/master/script/qgis/createDBUsingQgisModel.sh#L45-L59](https://github.com/georchestra/cadastrapp/blob/master/script/qgis/createDBUsingQgisModel.sh#L45-L59)
 
