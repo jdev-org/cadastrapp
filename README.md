@@ -7,7 +7,7 @@ It do not provides tools for the treatment of EDIGEO PCI and MAJIC files : you m
 
 Cadastrapp is so based on QGis data model. You have the choici for the better compatibility with your GIS.
 
-:warning: The arcOpole model will be unsuported from Cadastrapp 1.9.
+:warning: The arcOpole model will be unsupported from Cadastrapp 1.9.
 
 Read the [release notes](https://github.com/georchestra/cadastrapp/wiki/Releases)  for further informations
 
