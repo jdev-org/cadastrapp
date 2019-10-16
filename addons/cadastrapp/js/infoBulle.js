@@ -32,19 +32,11 @@ GEOR.Addons.Cadastre.displayInfoBulle = function(idParcelle, lonlat) {
             
             html = "";
             if (typeof(result) != "undefined"){
-                
-                    var NBCHARPARCELLEARCOPOLE = 15;
                     var departement, codir, inseecom;
-                                       
-                    if( idParcelle.length > NBCHARPARCELLEARCOPOLE ){
-                        departement = idParcelle.substr(4,2);
-                        codir = idParcelle.substr(6,1);
-                        inseecom = idParcelle.substr(7,3)
-                    }else{
-                        departement = idParcelle.substr(0,2);
-                        codir = idParcelle.substr(2,1);
-                        inseecom = idParcelle.substr(3,3);
-                    }
+                    
+                    departement = idParcelle.substr(0,2);
+                    codir = idParcelle.substr(2,1);
+                    inseecom = idParcelle.substr(3,3);
             
                     html = "<div class=\"cadastrapp-infobulle-parcelle\">";
                     
@@ -53,9 +45,7 @@ GEOR.Addons.Cadastre.displayInfoBulle = function(idParcelle, lonlat) {
                     html += "<tbody>";
 					html += "<tr><td colspan=\"2\" style=\"text-align:center; font-style: italic;\">" + idParcelle + "</td></tr>";
                     html += "<tr><td class=\"infobulle-label\">" + OpenLayers.i18n('cadastrapp.infobulle.commune') + " : </td><td>" + result.libcom + "</td></tr>";
-                    if( idParcelle.length > NBCHARPARCELLEARCOPOLE ){
-                        html += "<tr><td class=\"infobulle-label\">" + OpenLayers.i18n('cadastrapp.infobulle.annee') + " : </td><td>" + idParcelle.substr(0,4) + "</td></tr>";
-                    }
+                    html += "<tr><td class=\"infobulle-label\">" + OpenLayers.i18n('cadastrapp.infobulle.annee') + " : </td><td>" + idParcelle.substr(0,4) + "</td></tr>";
                     html += "<tr><td class=\"infobulle-label\">" + OpenLayers.i18n('cadastrapp.infobulle.departement') + " : </td><td>" + departement + "</td></tr>";
                     if( codir != "0" ){
                         html += "<tr><td class=\"infobulle-label\">" + OpenLayers.i18n('cadastrapp.infobulle.direction') + " : </td><td>" + codir + "</td></tr>";
