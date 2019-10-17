@@ -13,6 +13,8 @@ Read the [release notes](https://github.com/georchestra/cadastrapp/wiki/Releases
 
 Read the [Installation Guide](https://github.com/georchestra/cadastrapp/wiki/Guide-Administrateur#installation) for the technical purposes.
 
+Read [the scripts guide](https://github.com/georchestra/cadastrapp/tree/master/script) to create and populate the database.
+
 
 This repository is made of 3 mains parts : 
 - script folder contains all necessary shell to build and install database
