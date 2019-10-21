@@ -193,3 +193,16 @@ replaceAndLaunch ../commun/tables/request_information.sql
 
 # -- create index
 replaceAndLaunch ../commun/index.sql
+
+# -- comments and set titles
+replaceAndLaunch ./comments/qgisCommuneComments.sql
+replaceAndLaunch ./comments/qgisParcelleComments.sql
+replaceAndLaunch ./comments/qgisProprietaireComments.sql
+replaceAndLaunch ./comments/qgisCoProprieteParcelleComments.sql
+replaceAndLaunch ./comments/qgisProprietaireParcelleComments.sql
+replaceAndLaunch ./comments/qgisProprieteBatieComments.sql
+replaceAndLaunch ./comments/qgisProprieteNonBatieComments.sql
+replaceAndLaunch ./comments/qgisProprieteNonBatieSufExoComments.sql
+replaceAndLaunch ./comments/qgisSectionComments.sql
+replaceAndLaunch ./comments/qgisHabitationDetailsComments.sql
+replaceAndLaunch ./comments/qgisLotComments.sql
