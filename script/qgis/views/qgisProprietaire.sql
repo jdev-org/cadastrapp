@@ -1,5 +1,4 @@
 -- Create view proprietaire based on Qgis Models
--- 29 / 71 champs inutilisés
 
 CREATE MATERIALIZED VIEW #schema_cadastrapp.proprietaire AS 
 	SELECT proprietaire.id_proprietaire, 
