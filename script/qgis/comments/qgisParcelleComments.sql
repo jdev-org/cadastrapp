@@ -6,15 +6,15 @@ COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.surfb IS '';
 
 
 COMMENT ON MATERIALIZED VIEW #schema_cadastrapp.parcelle IS 'Parcelle';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.cgocommune IS 'Code commune INSEE';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dnupla IS 'Num plan';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dnvoiri IS 'Num voirie';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dindic IS 'Indic répétition voie';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.cconvo IS 'Nature voie';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dvoilib IS 'Libellé voie';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.ccopre IS 'Préfixe';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.ccosec IS 'Section';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dcntpa IS 'Contenance parcelle';
+COMMENT ON COLUMN #schema_cadastrapp.parcelle.cgocommune IS 'Code commune INSEE';
+COMMENT ON COLUMN #schema_cadastrapp.parcelle.dnupla IS 'Num plan';
+COMMENT ON COLUMN #schema_cadastrapp.parcelle.dnvoiri IS 'Num voirie';
+COMMENT ON COLUMN #schema_cadastrapp.parcelle.dindic IS 'Indic répétition voie';
+COMMENT ON COLUMN #schema_cadastrapp.parcelle.cconvo IS 'Nature voie';
+COMMENT ON COLUMN #schema_cadastrapp.parcelle.dvoilib IS 'Libellé voie';
+COMMENT ON COLUMN #schema_cadastrapp.parcelle.ccopre IS 'Préfixe';
+COMMENT ON COLUMN #schema_cadastrapp.parcelle.ccosec IS 'Section';
+COMMENT ON COLUMN #schema_cadastrapp.parcelle.dcntpa IS 'Contenance parcelle';
 
 
 COMMENT ON MATERIALIZED VIEW #schema_cadastrapp.parcelledetails IS 'Détail parcelle';
@@ -33,8 +33,8 @@ COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.dnupdl IS 'Num ordre de la 
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.gurbpa IS 'Caractère urbain parcelle';
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.dparpi IS 'Num parcelle primitive';
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.ccoarp IS 'Indic arpentage';
-COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.comptecommunal IS 'Indic parcelle non figurée au plan';
-COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.comptecommunal IS 'Num voirie';
+COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.gparnf IS 'Indic parcelle non figurée au plan';
+COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.gparbat IS 'Num voirie';
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.dnvoiri IS 'Compte communal';
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.dindic IS 'Indice répétition';
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.ccovoi IS 'Code MAJIC2 voie';
@@ -52,5 +52,3 @@ COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.ccopre IS 'Compte communal'
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.ccosec IS 'Section';
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.pdl IS 'Propriété divisé en lot';
 -- COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.inspireid IS 'Identifiant Inspire';
-COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.surfc IS '';
-COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.surfb IS '';
