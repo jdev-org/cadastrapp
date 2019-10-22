@@ -1,19 +1,20 @@
 -- Create view parcelle, parcelledetails, v_parcelle_surfc based on Qgis Models
 
 COMMENT ON MATERIALIZED VIEW #schema_cadastrapp.v_parcelle_surfc IS 'parcelle';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Compte communal';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.surfc IS '';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.surfb IS '';
 
 
 COMMENT ON MATERIALIZED VIEW #schema_cadastrapp.parcelle IS 'Parcelle';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Code commune INSEE';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Num plan';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Num voirie';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Indic répétition voie';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Nature voie';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Libellé voie';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Préfixe';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Section';
-COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.comptecommunal IS 'Contenance parcelle';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.cgocommune IS 'Code commune INSEE';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dnupla IS 'Num plan';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dnvoiri IS 'Num voirie';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dindic IS 'Indic répétition voie';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.cconvo IS 'Nature voie';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dvoilib IS 'Libellé voie';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.ccopre IS 'Préfixe';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.ccosec IS 'Section';
+COMMENT ON COLUMN #schema_cadastrapp.v_parcelle_surfc.dcntpa IS 'Contenance parcelle';
 
 
 COMMENT ON MATERIALIZED VIEW #schema_cadastrapp.parcelledetails IS 'Détail parcelle';
