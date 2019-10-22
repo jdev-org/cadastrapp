@@ -64,7 +64,6 @@ COMMENT ON COLUMN #schema_cadastrapp.descproffessionnel.dsup2 IS 'Surf. parties 
 COMMENT ON COLUMN #schema_cadastrapp.descproffessionnel.dsup3 IS 'Surf. parties secondaires non couvertes';
 COMMENT ON COLUMN #schema_cadastrapp.descproffessionnel.dsupk1 IS 'Surf. stationnement couverts';
 COMMENT ON COLUMN #schema_cadastrapp.descproffessionnel.dsupk2 IS 'Surf. stationnement non couverts';
-COMMENT ON COLUMN #schema_cadastrapp.descproffessionnel.dsupk3 IS 'Surface des parties secondaires non couvertes';
 COMMENT ON COLUMN #schema_cadastrapp.descproffessionnel.dnudes IS 'Num. d''ordre de descriptif';
 COMMENT ON COLUMN #schema_cadastrapp.descproffessionnel.vsurzt IS 'Surf. réelles totale';
 COMMENT ON COLUMN #schema_cadastrapp.descproffessionnel.ccocac IS 'Code categ. local';
