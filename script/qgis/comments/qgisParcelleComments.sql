@@ -51,4 +51,4 @@ COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.annee IS 'Compte communal';
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.ccopre IS 'Compte communal';
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.ccosec IS 'Section';
 COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.pdl IS 'Propriété divisé en lot';
--- COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.inspireid IS 'Identifiant Inspire';
+COMMENT ON COLUMN #schema_cadastrapp.parcelledetails.inspireid IS 'Identifiant Inspire';
